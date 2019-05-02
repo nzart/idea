@@ -1,0 +1,123 @@
+@font-face {
+  font-family: 'Springville Regular';
+  src: url("../fonts/springville-regular3-webfont.woff2") format("woff2"), url("../fonts/springville-regular3-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 26, ../sass/style.scss */
+body {
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 122px;
+}
+
+/* line 33, ../sass/style.scss */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* line 39, ../sass/style.scss */
+#nav {
+  margin: 0 auto;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  height: 122px;
+  box-sizing: border-box;
+  padding: 0 139px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* line 51, ../sass/style.scss */
+#nav ul {
+  list-style: none;
+  font-family: 'Arial', sans-serif;
+  font-size: 15px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+/* line 58, ../sass/style.scss */
+#nav ul span,
+#nav ul span::before,
+#nav ul span::after {
+  /* hamburger icon in CSS */
+  position: absolute;
+  width: 28px;
+  height: 3px;
+  background-color: #000;
+}
+/* line 67, ../sass/style.scss */
+#nav ul span {
+  margin: 0 auto;
+}
+/* line 70, ../sass/style.scss */
+#nav ul span::before, #nav ul span:after {
+  content: '';
+}
+/* line 73, ../sass/style.scss */
+#nav ul span::before {
+  bottom: 8px;
+}
+/* line 76, ../sass/style.scss */
+#nav ul span::after {
+  top: 8px;
+}
+/* line 79, ../sass/style.scss */
+#nav ul li {
+  margin: 0;
+  padding: 1em;
+}
+/* line 83, ../sass/style.scss */
+#nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+@media (max-width: 770px) {
+  /* line 91, ../sass/style.scss */
+  .hero {
+    background-position: center;
+  }
+}
+
+/* line 100, ../sass/style.scss */
+.bottom {
+  padding-top: 79px;
+  display: flex;
+  width: 100%;
+}
+
+/* line 107, ../sass/style.scss */
+.item_layout {
+}
+/* line 114, ../sass/style.scss */
+.item_layout .item {
+  width: 348px;
+}
+/* line 119, ../sass/style.scss */
+.item_layout .item .date {
+  font-family: 'Arial', sans-serif;
+  font-size: 15px;
+  padding-top: 41px;
+  padding-bottom: 30px;
+}
+/* line 125, ../sass/style.scss */
+.item_layout .item .headline {
+  font-family: 'Springville Regular', serif;
+  font-size: 48px;
+  line-height: inherit;
+  font-weight: 400;
+  padding: 0 2px;
+}
+/* line 132, ../sass/style.scss */
+.item_layout .item .pbli {
+  font-family: 'ACaslonPro-Regular', serif;
+  padding-top: 22px;
+  padding-bottom: 40px;
+}

@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Springville Regular';
+    src: url('../fonts/springville-regular3-webfont.woff2') format('woff2'),
+         url('../fonts/springville-regular3-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    //background-color: #a8a8a8;
+    padding-top: 122px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#nav {
+    margin: 0 auto;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    height: 122px;
+    box-sizing: border-box;
+    padding: 0 139px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    ul {
+        list-style: none;
+        font-family: 'Arial', sans-serif;
+        font-size: 15px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        span,
+        span::before,
+        span::after {
+        /* hamburger icon in CSS */
+        position: absolute;
+        width: 28px;
+        height: 3px;
+        background-color: #000;
+        }
+        span {
+        margin: 0 auto;
+        }
+        span::before, span:after {
+        content: '';
+        }
+        span::before {
+        bottom: 8px;
+        }
+        span::after {
+        top: 8px;
+        }
+        li {
+            margin: 0;
+            //display: inline-flex;
+            padding: 1em;
+            a {
+                text-decoration: none;
+                color: #000;
+            }
+        }
+    }
+}
+
+.hero {
+    //max-width: 1440px;
+    @media (max-width: 770px) {
+        //width: 100%;
+        //height: 100%;
+        background-position: center;
+    }
+}
+
+.bottom {
+    padding-top: 79px;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    //padding: 0 139px;
+}
+
+.item_layout {
+    display: block;
+    //flex-wrap: wrap;
+    width: 100vw;
+    z-index: -1;
+    //column-count: 3;
+    //justify-content: space-around;
+   .item {
+        //background-color: bisque;
+        width: 348px;
+        //padding: 0 10px;
+        //break-inside: avoid;
+        .date {
+            font-family: 'Arial', sans-serif;
+            font-size: 15px;
+            padding-top: 41px;
+            padding-bottom: 30px;
+        }
+        .headline {
+            font-family: 'Springville Regular', serif;
+            font-size: 48px;
+            line-height: inherit;
+            font-weight: 400;
+            padding: 0 2px;
+        }
+        .pbli {
+            font-family: 'ACaslonPro-Regular', serif;
+            padding-top: 22px;
+            padding-bottom: 40px;
+        }
+    } 
+}
+    
+
