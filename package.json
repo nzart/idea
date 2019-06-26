@@ -12,7 +12,7 @@
     "start": "parcel index.html",
     "dev": "parcel index.html",
     "build": "parcel build index.html",
-    "predeploy": "yarn build index.html --public-url /idea/",
+    "predeploy": "yarn build index.html --public-url http://imnickzart.com/idea/",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
