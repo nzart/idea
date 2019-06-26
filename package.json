@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nzart/idea"
+  },
   "devDependencies": {
     "parcel-bundler": "^1.12.3",
     "sass": "^1.19.0"
@@ -12,7 +16,7 @@
     "start": "parcel index.html",
     "dev": "parcel index.html",
     "build": "parcel build index.html",
-    "predeploy": "yarn build index.html --public-url ./",
+    "predeploy": "yarn build index.html --public-url /idea/",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
