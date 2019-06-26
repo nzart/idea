@@ -7,13 +7,17 @@
     "parcel-bundler": "^1.12.3",
     "sass": "^1.19.0"
   },
+  "homepage": "http://imnickzart.com/idea/",
   "scripts": {
     "start": "parcel index.html",
     "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "predeploy": "yarn build index.html --public-url /idea/",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "bricks.js": "^1.8.0",
+    "gh-pages": "^2.0.1",
     "normalize.css": "^8.0.1"
   }
 }
